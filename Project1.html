@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+	border: 3px solid #4CAF50;
+}
+.img1 {
+    float: left;
+    width: auto;
+}
+.img2 {
+    float: left;
+    width: auto;
+}
+.clearfix {
+    overflow: auto;
+}
+</style>
+<h1>Applicant Tracking Software</h1>
+
+<script>
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};
+    return i;
+}
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    var weekday = new Array(7);
+    weekday[0] = "Sunday";
+    weekday[1] = "Monday";
+    weekday[2] = "Tuesday";
+    weekday[3] = "Wednesday";
+    weekday[4] = "Thursday";
+    weekday[5] = "Friday";
+    weekday[6] = "Saturday";
+    var n = weekday[today.getDay()];
+    
+
+    
+    document.getElementById('displaytime').innerHTML =
+    h + ":" + m + ":" + s + " "+ n;
+    var t = setTimeout(startTime, 500);
+}
+</script>
+
+</head>
+<hr>
+
+<body>
+<h2><a href="https://www.icims.com/talent-acquisition-software/recruiting-software">iCIMS</a></h2>
+<div class="clearfix">
+<a href="https://www.icims.com/talent-acquisition-software/recruiting-software">
+<img class="img1" src="icims.png" alt="icims" style="width:150px;
+height:101px;margin-right:15px;">
+</a>
+Driven by a passion to help companies win the war for talent, iCIMS is proud to
+ offer leading software solutions and tools to unify all aspects of talent acquisition.
+  With iCIMS, companies can manage their entire talent acquisition lifecycle within
+   a single SaaS application. Our focus on user-friendly technology and an exceptional
+    customer experience has made us the largest standalone provider in the industry.
+     iCIMS offers the only true enterprise end-to-end talent acquisition platform.
+      (From iCIMS Website)  
+</div>
+
+<h2><a href= "http://unbouncepages.com/greenhouse-gdm/?utm_campaign=capterra-applicant
+-tracking&utm_medium=directories&utm_source=capterra">Greenhouse</a></h2>
+<div class="clearfix">
+<a href="http://unbouncepages.com/greenhouse-gdm/?utm_campaign=capterra-applicant
+-tracking&utm_medium=directories&utm_source=capterra">
+<img class="img2" src="green.png" alt="green" style="width:150px;
+height:101px;margin-right:15px;">
+</a>
+Greenhouse provides a recruiting software as a service. Greenhouse sells annual
+ licenses to companies, allowing them to use Greenhouse's software. Greenhouse collects
+  into one dashboard the job seekers' applications from different routes like employment
+   websites and referrals. Greenhouse is an open platform that uses an application
+    programming interface (API) to facilitate the aggregation. To determine which job
+     posts are more effective, it allows companies to do A/B testing. Greenhouse lets
+      companies create a uniform interview procedure so candidates can be judged based on
+       the same rubric. It aggregates a candidate's resumes and interview feedback for
+        comparison with the job opening's specifications. It allows companies to
+         compare candidates against each other and to compare their hiring metrics
+          against the industry standards. (From Wikipedia)
+</div>
+
+<h2><a href= "https://www.jazzhr.com/try-jazz-today-request-demo/capterra-applicant
+-tracking/?utm_medium=cpc&utm_campaign=directory_applicant_tracking&utm_content=
+trial_spotlight_link&utm_source=capterra">JazzHr</a></h2>
+<div class="clearfix">
+<a href= "https://www.jazzhr.com/try-jazz-today-request-demo/capterra-applicant
+-tracking/?utm_medium=cpc&utm_campaign=directory_applicant_tracking&utm_content=
+trial_spotlight_link&utm_source=capterra">
+<img class="img2" src="jazzhr.png" alt="green" style="width:150px;
+height:101px;margin-right:15px;">
+</a>
+JazzHR is a powerful, user-friendly and affordable ATS & recruiting software that enables
+ today's greatest people to build tomorrow's greatest companies. JazzHR replaces
+  antiquated hiring processes like email and spreadsheets with an intuitive ATS that
+   helps recruiters & hiring managers build a scalable & effective recruiting process
+    that consistently results in great hires. JazzHR is also the creator of HR's first
+     integrated crowd-sourcing, big-data & predictive analytics initiative.
+      (From <a href= "https://www.capterra.com/p/87750/JazzHR/">
+      https://www.capterra.com/p/87750/JazzHR/</a>)
+</div>
+
+
+<h2><a href= "https://www.workable.com/">Workable</a></h2>
+<div class="clearfix">
+<a href= "https://www.workable.com/">
+<img class="img2" src="workable.png" alt="green" style="width:150px;
+height:101px;margin-right:15px;">
+</a>
+Workable provides a flexible, intuitive interface to track and manage candidates. Visual
+ hiring pipelines give live status updates for every job with rich candidate profiles.
+  Use the candidate database and talent CRM to nurture and progress prospects over time.
+   Create a structured interview process with interview kits and generate actionable
+    feedback with customized scorecards. Trackable communication ensures smooth
+     collaboration with your team. Available on desktop or mobile.
+     (From <a href = "https://www.capterra.com/applicant-tracking-software/">
+      https://www.capterra.com/applicant-tracking-software/ </a>)
+</div>
+
+<h2><a href= "https://www.crelate.com/features-applicant-tracking">Crelate Talent</a></h2>
+<div class="clearfix">
+<a href= "https://www.crelate.com/features-applicant-tracking">
+<img class="img2" src="ct.png" alt="green" style="width:150px;
+height:101px;margin-right:15px;">
+</a>
+Crelate is a modern, fast, full-featured applicant tracking and talent relationship
+ management solution built specifically for retained search agencies, executive search
+  firms and professional corporate recruiters. We offer the features busy recruiters want
+   such as Outlook client integration, email tracking, flexible workflows, candidate
+    portal, mobile access, client submittals and more; as well as the onboarding,
+     training and service they would expect and we do all at a reasonable price.
+     (From <a href = "https://www.capterra.com/applicant-tracking-software/">
+      https://www.capterra.com/applicant-tracking-software/ </a>)
+</div>
+
+<hr>
+<p id="demo"></p>
+<button type="button" onclick="document.getElementById('demo').innerHTML =
+ 'Maozhe Gong'">Author</button>
+</body>
+
+<body onload="startTime()">
+<div id="displaytime"></div>
+
+</body>
+</html>
+
+
