@@ -7,7 +7,7 @@ ul {
 }
 
 li {
-    margin:25px 0;
+    margin:50px 0;
 }
 
 .main {
@@ -15,16 +15,19 @@ li {
     margin-right: 50px;
     margin-top: 50px;
     border-style: solid;
+    overflow: hidden;
 }
 
 .panel {
-    width: 20%;
+    margin-right:10px;
+    padding-right:10px;
     border-right: solid;
-    
+    float: left;
 }
 
 .content {
-    width: 80%;
+    /* width: 70%; */
+    float: left;
 }
 /* .banner {
     background-size: 
