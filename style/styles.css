@@ -10,10 +10,15 @@ li {
     margin:50px 0;
 }
 
+div {
+    vertical-align: top;
+}
+
 .main {
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 50px;
+    width: 85%;
     border-style: solid;
     overflow: hidden;
 }
@@ -22,12 +27,21 @@ li {
     margin-right:10px;
     padding-right:10px;
     border-right: solid;
-    float: left;
+    width:30%;
+    display: inline-block
 }
 
 .content {
     /* width: 70%; */
-    float: left;
+    padding-top: 25px; 
+    padding-bottom: 25px;
+    margin: auto;
+    width:60%;
+    display: inline-block
+}
+
+.home {
+    text-align: center;
 }
 /* .banner {
     background-size: 
