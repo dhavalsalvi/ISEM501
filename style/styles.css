@@ -28,7 +28,7 @@ div {
     padding-right:10px;
     border-right: solid;
     width:30%;
-    display: inline-block
+    display: inline-block;
 }
 
 .content {
@@ -41,6 +41,14 @@ div {
 }
 
 .home {
+    text-align: center;
+}
+
+.candidate, th {
+    font: 32px;
+    border: solid;
+    padding-right: 15px;
+    padding-left: 15px;
     text-align: center;
 }
 /* .banner {
