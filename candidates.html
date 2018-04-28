@@ -1,40 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Storm Applicant Tracking System</title>
-    <link rel="stylesheet" href="style/styles.css">
+<title>Candidates</title>
+<link rel="stylesheet" type="text/css" href="style/styles.css" />
+<script type="text/javascript" src="scripts/script.js"></script>
 </head>
-
-<body>
-    <div class="banner">
-        <img src="images/banner.jpg" height="100px" width=100%>
-    </div>
-    <div class="main">
+<body onload="startTime()">
+    
+        <div class="banner">
+        	<h1 class="banner_title"> Applicant Tracking System </h1>
+        	<h1 class="login"> login </h1>
+        	<h1 class="signup"> Sign-up </h1>
+        </div>
+        <div class="main">
         <div class="panel">
-            <ul>
-                <li><button>Home</button></li>
-                <li><button>Candidates</button></li>
-                <li><button>Companies</button></li>
-                <li><button>Reports</button></li>
-                <li><button>Events Schedule</button></li>
-            </ul>
+            <button class="sidepanel" id="home" onclick="loadHomePage()"">Home</button>
+            <button class="sidepanel" id="candidates" onclick="loadCandidatesPage()"">Candidates</button>
+            <button class="sidepanel" id="companies" onclick="loadCompaniesPage()"">Companies</button>
+            <button class="sidepanel" id="reports" onclick="loadReportsPage()">Reports</button>
+            <button class="sidepanel" id="events" onclick="loadEventsPage()"">Events Schedule</button>
+            <button class="sidepanel" id="open_recquisitions" onclick="loadOpenRecquisitionsPage()">Open Recquistions</button>
         </div>
         <div class="content">
-            <table>
-                <tr class="candidate">
-                    <th>FirstName</th>
-                    <th>LastName</th>
-                    <th>City</th>
-                    <th>State</th>
-                    <th>Email</th>
-                    <th>Phone</th>
-                    <th>Status</th>
-                    <th>Last Modified</th>
-                </tr>
-            </table>
+            <div class="candidates_content">
+                This is the Candidates page
+            </div>
         </div>
     </div>
-    
+    <div id="footer" ></div>
+   
 </body>
-
 </html>

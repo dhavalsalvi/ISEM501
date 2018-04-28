@@ -1,56 +1,124 @@
+
 body {
-    background-color: lightblue;
-}
-
-ul {
-    list-style-type: circle;
-}
-
-li {
-    margin:50px 0;
-}
-
-div {
-    vertical-align: top;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color:#333
 }
 
 .main {
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 50px;
-    width: 85%;
-    border-style: solid;
-    overflow: hidden;
+ height: :calc(100vh);
+ width: 100%;
+ width: calc(100%);
+
 }
+
+.banner {
+    float: left;
+    height: calc(10vh);
+    width: 100%;
+    width:calc(100%);
+    background: #000000;
+}
+
+
+#footer {
+    float: left;
+    height: calc(10vh);
+    width: 100%;
+    width:calc(100%);
+    background: #000000;
+    font-style: oblique;
+    font-size: 25px;
+    color: #FFFFFF;
+
+}
+
+.home_content{
+    float: left;
+    background: #00CED1;
+    width: 90%;
+    width:calc(90%);
+     height: calc(80vh);
+}
+
+.reports_content{
+    float: left;
+    background: #7FFF00;
+    width: 90%;
+    width:calc(90%);
+     height: calc(80vh);
+}
+
+.open_recquisitions_content{
+    float: left;
+    background: #FFF8DC;
+    width: 90%;
+    width:calc(90%);
+     height: calc(80vh);
+}
+
+.companies_content{
+    float: left;
+    background: #B0C4DE;
+    width: 90%;
+    width:calc(90%);
+     height: calc(80vh);
+}
+
+.candidates_content{
+    float: left;
+    background: #BDB76B;
+    width: 90%;
+    width:calc(90%);
+     height: calc(80vh);
+}
+
+.events_content{
+    float: left;
+    background: #E9967A;
+    width: 90%;
+    width:calc(90%);
+     height: calc(80vh);
+}
+
 
 .panel {
-    margin-right:10px;
-    padding-right:10px;
-    border-right: solid;
-    width:30%;
-    display: inline-block;
+    background: #696969;
+    width: 10%;
+    width:calc(10%);
+     height: calc(80vh);
+    float: left;
+}
+.banner_title {
+    padding-left: 50px;
+    color: white;
+    float: left;
 }
 
-.content {
-    /* width: 70%; */
-    padding-top: 25px; 
-    padding-bottom: 25px;
-    margin: auto;
-    width:60%;
-    display: inline-block
+.login {
+    color: blue;
+    float: right;
+    padding-right: 50px;
 }
 
-.home {
-    text-align: center;
+.signup {
+    color: green;
+    float: right;
+    padding-right: 50px;
 }
 
-.candidate, th {
-    font: 32px;
-    border: solid;
-    padding-right: 15px;
-    padding-left: 15px;
-    text-align: center;
+
+
+.panel ul{
+  list-style-type: none;
 }
-/* .banner {
-    background-size: 
-} */
+
+.sidepanel{
+    float:left;
+    width: 100%;
+    width:calc(100%);
+    height: calc(10vh);
+    font-style: oblique;
+    font-size: 15px;
+
+}
