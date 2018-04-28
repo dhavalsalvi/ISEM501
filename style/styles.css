@@ -6,7 +6,7 @@ body {
 }
 
 .main {
- height: calc(100vh);
+ height: :calc(100vh);
  width: 100%;
  width: calc(100%);
 
@@ -36,7 +36,6 @@ body {
 .home_content{
     float: left;
     background: #00CED1;
-    text-align: center;
     width: 90%;
     width:calc(90%);
      height: calc(80vh);
@@ -108,10 +107,6 @@ body {
     padding-right: 50px;
 }
 
-.candidate {
-    margin-top: 20px;
-}
-
 .candidate-table {
     margin: auto;
     border: 1px solid black;
@@ -127,12 +122,6 @@ th, td {
     border-collapse: collapse;
 }
 
-/* .col-header, th {
-     font-size: 16px; 
-} */
-/* .banner {
-    background-size: 
-} */
 
 
 .panel ul{
