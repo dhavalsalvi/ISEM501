@@ -24,8 +24,8 @@ div {
 }
 
 .panel {
-    margin-right:10px;
-    padding-right:10px;
+    margin-right:10px; 
+    padding-right:10px; 
     border-right: solid;
     width:30%;
     display: inline-block;
@@ -37,11 +37,15 @@ div {
     padding-bottom: 25px;
     margin: auto;
     width:60%;
-    display: inline-block
+    display: inline-block;
 }
 
 .home {
     text-align: center;
+}
+
+.candidate {
+    margin-top: 20px;
 }
 
 .candidate-table {
