@@ -1,4 +1,5 @@
 function addRow() {
+    var 
     var firstName = document.getElementById("firstName");
     var lastName = document.getElementById("lastName");
     var email = document.getElementById("email");
@@ -18,4 +19,5 @@ function addRow() {
    td.appendChild(txt);
    tr.appendChild(td);
    table.appendChild(tr);
+//    e.preventDefault();
 }
