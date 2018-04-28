@@ -25,6 +25,26 @@ function startTime() {
     var t = setTimeout(startTime, 500);
 }
 
+
+function login() {
+    
+    var username = prompt("Please enter your username:", "Harry Potter");
+    var password = prompt("Please enter your password:", "LordVolderMort666");
+
+    
+}
+
+function sign_up() {
+    
+    var username = prompt("Please enter the username you want:", "Harry Potter");
+    var password = prompt("Please select a password:", "LordVolderMort666");
+
+    
+}
+
+
+
+
 function loadReportsPage(){
     location.href="reports.html"
 }
