@@ -44,13 +44,24 @@ div {
     text-align: center;
 }
 
-.candidate, th {
-    font: 32px;
-    border: solid;
-    padding-right: 15px;
-    padding-left: 15px;
+.candidate-table {
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 12px;
+    padding-right: 5px;
+    padding-left: 5px;
     text-align: center;
 }
+
+th, td {
+    border: solid;
+    border-collapse: collapse;
+}
+
+/* .col-header, th {
+     font-size: 16px; 
+} */
 /* .banner {
     background-size: 
 } */
