@@ -1,5 +1,5 @@
 function addRow() {
-    var 
+    var elements = document.getElementById("candidate").elements;
     var firstName = document.getElementById("firstName");
     var lastName = document.getElementById("lastName");
     var email = document.getElementById("email");
@@ -11,13 +11,19 @@ function addRow() {
     console.log(firstName);
 
     var table = document.getElementById("my-table");
-    // table.insertRow(-1).innerHtml = "<tr><td>hello</td></tr>";
     var tr = document.createElement("tr");
-    var td = document.createElement("td");
-    var txt = document.createTextNode("some value");
+    // table.insertRow(-1).innerHtml = "<tr><td>hello</td></tr>";
+    for (var i = 0; i< elements.length; i++){
+        if (elements[i].value !== "Submit"){
+            var td = document.createElement("td");
+            var txt = document.createTextNode(elements[i].value);
+            td.appendChild(txt);
+            tr.appendChild(td);
+        }
+        
+    }
+    table.appendChild(tr);
     
-   td.appendChild(txt);
-   tr.appendChild(td);
-   table.appendChild(tr);
+   
 //    e.preventDefault();
 }
