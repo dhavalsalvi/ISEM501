@@ -137,7 +137,10 @@ th, td {
     
 }
 
+.open_recquisitions_content ul{
+     list-style-type: disc;
 
+}
 
 .panel ul{
   list-style-type: none;
