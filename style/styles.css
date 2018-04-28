@@ -143,3 +143,10 @@ th, td {
     font-size: 32px;
     margin-left: 5px;
 }
+
+.home_content img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
