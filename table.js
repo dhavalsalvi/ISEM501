@@ -24,6 +24,4 @@ function addRow() {
     }
     table.appendChild(tr);
     
-   
-//    e.preventDefault();
 }
