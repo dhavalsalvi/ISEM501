@@ -1,0 +1,3 @@
+A candidate can apply to multiple positions, and a position can have multiple candidates, hence it is many to many.
+
+Since a candidate may apply to multiple positions, he/she can have many reports, same thing with positions/reports, it is one to many.
