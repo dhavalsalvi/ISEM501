@@ -31,7 +31,7 @@
 	<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel">
   		<div class="modal-dialog" role="document">
     		<div class="modal-content">
-     			<form method="post" action="/add">
+     			<form method="post" action="/add_entries">
       				<div class="modal-header">
         					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         					<h4 class="modal-title" id="myModalLabel">Add Entry</h4>

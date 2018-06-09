@@ -1,6 +1,12 @@
 {>"layout_events" /}
 
 {<body}
+
+    <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#formModal">
+      Search Candidate
+    </button>   
+    <br />
+    
     {#recipes}
         <div class="well">
             <h4>{FirstName}
@@ -12,13 +18,49 @@
          	<div class="collapse" id="recipe_{FirstName}">
                <br />
                <br />
+               <p> <strong> First Name: </strong>{FirstName}</p>
                <p> <strong> Last Name: </strong>{LastName}</p>
-               <p> <strong> Address: </strong>{Address1}</p>   
                <p> <strong> Email: </strong>{Email}</p>
+               <p> <strong> Phone number: </strong>{PhoneNumber}</p>
+               <p> <strong> Event: </strong>{Status}</p>
+               <p> <strong> Date: </strong>{LastModified}</p>
+
+
+
                <br />
                <hr />         	
             </div>
 
         </div> 
     {/recipes}
+
+    
+     <!-- Add Form Modal -->
+  <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <form method="post" action="/search_events">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Add Entry</h4>
+              </div>
+              <div class="modal-body">
+                      <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" class="form-control" name="FirstName" />
+                  </div>
+                  <div class="form-group">
+                    <label>Last Name</label>
+                    <input type="text" class="form-control" name="LastName" />
+                  </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <input type="submit" class="btn btn-primary" value="Search"/>
+              </div>
+            </form>
+        </div>
+      </div>
+  </div>
+
 {/body}
