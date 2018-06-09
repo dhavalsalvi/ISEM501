@@ -1,0 +1,67 @@
+{>"layout" /}
+
+{<body}
+      
+    <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#formModal">
+      Add Entry
+    </button>   
+    <br />
+
+    {#recipes}
+        <div class="well">
+            <h4>{FirstName}
+            <button class="btn btn-default pull-right" data-toggle="collapse" href="#recipe_{FirstName}" aria-expanded="false" aria-controls="recipe_{FirstName}">
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"> </span>
+            </button> 
+            </h4>
+
+         	<div class="collapse" id="recipe_{FirstName}">
+               <br />
+               <br />
+               <p> <strong> Last Name: </strong>{LastName}</p>
+               <p> <strong> Address: </strong>{Address1}</p>   
+               <p> <strong> Email: </strong>{Email}</p>
+               <br />
+               <hr />         	
+            </div>
+        </div> 
+    {/recipes}
+
+   <!-- Add Form Modal -->
+	<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel">
+  		<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+     			<form method="post" action="/add">
+      				<div class="modal-header">
+        					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        					<h4 class="modal-title" id="myModalLabel">Add Entry</h4>
+      				</div>
+      				<div class="modal-body">
+      				        <div class="form-group">
+        						<label>First Name</label>
+        						<input type="text" class="form-control" name="FirstName" />
+        					</div>
+        					<div class="form-group">
+        						<label>Last Name</label>
+        						<input type="text" class="form-control" name="LastName" />
+        					</div>
+        					<div class="form-group">
+        						<label>Address</label>
+        						<textarea class="form-control" name="Address1"></textarea>
+        					</div>
+        					<div class="form-group">
+        						<label>Email</label>
+        						<input type="text" class="form-control" name="Email" />
+        					</div>
+      				</div>
+      				<div class="modal-footer">
+        				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        				<input type="submit" class="btn btn-primary" value="Save"/>
+      				</div>
+      			</form>
+    		</div>
+  		</div>
+	</div>
+
+
+{/body}

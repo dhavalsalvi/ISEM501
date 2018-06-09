@@ -1,0 +1,24 @@
+{>"layout_companies" /}
+
+{<body}
+    {#recipes}
+        <div class="well">
+            <h4>{FirstName}
+            <button class="btn btn-default pull-right" data-toggle="collapse" href="#recipe_{FirstName}" aria-expanded="false" aria-controls="recipe_{FirstName}">
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"> </span>
+            </button> 
+            </h4>
+
+         	<div class="collapse" id="recipe_{FirstName}">
+               <br />
+               <br />
+               <p> <strong> Last Name: </strong>{LastName}</p>
+               <p> <strong> Address: </strong>{Address1}</p>   
+               <p> <strong> Email: </strong>{Email}</p>
+               <br />
+               <hr />         	
+            </div>
+
+        </div> 
+    {/recipes}
+{/body}

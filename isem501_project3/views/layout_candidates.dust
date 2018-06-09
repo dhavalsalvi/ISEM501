@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> index </title>
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script type="text/javascript" src="/js/script.js"></script>
+</head>
+
+<body onload="startTime()">
+
+
+        <div class="banner">
+            <h1 class="banner_title"> Applicant Tracking System </h1>
+            <h1 class="login"> login </h1>
+            <h1 class="signup"> Sign-up </h1>
+        </div>
+        <div class="main">
+        <div class="panel">
+            <button class="sidepanel" id="home" onclick="loadHomePage()"">Home</button>
+            <button class="sidepanel" id="candidates" onclick="loadCandidatesPage()"">Candidates</button>
+            <button class="sidepanel" id="companies" onclick="loadCompaniesPage()"">Companies</button>
+            <button class="sidepanel" id="reports" onclick="loadReportsPage()">Reports</button>
+            <button class="sidepanel" id="events" onclick="loadEventsPage()"">Events Schedule</button>
+            <button class="sidepanel" id="open_recquisitions" onclick="loadOpenRecquisitionsPage()">Open Recquistions</button>
+        </div>
+        <div class="content">
+            <div class="candidates_content">
+                       List of Candidates:
+            <form name="addName" id="candidate_form" class="">
+                 <input name="firstName" id="firstName" placeholder="first name"/>
+                 <input name="lastName" id="lastName" placeholder="last name"/>
+                 <input name="city" id="city" placeholder="city"/>
+                 <input name="state" id="state" placeholder="state"/>
+                 <input name="email" id="email" placeholder="email"/>
+                 <input name="phone" id="phone" placeholder="phone"/>
+                 <input name="status" id="status" placeholder="status"/>
+                 <input name="lastModified" id="lastModified" placeholder="last modified"/>
+                <!-- <button onclick="addRow()" type="submit" form="candidate" value="Submit">Add</button>  -->
+            </form>
+            <button onclick="addRow()" id="addEntry" value="Submit">Add</button>
+                <table class="candidate_table" id="my_table">
+                    <tr class="col_header">
+                        <th>FirstName</th>
+                        <th>LastName</th>
+                        <th>City</th>
+                        <th>State</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Status</th>
+                        <th>Last Modified</th>
+                        <!-- <button><span>+</span></button> -->
+                    </tr>
+                    <tr>
+                        <td id="firstName">Alan</td>
+                        <td id="lastName">Wilson</td>
+                        <td>Philadelphia</td>
+                        <td>PA</td>
+                        <td>hello@world.com</td>
+                        <td>113-321-9999</td>
+                        <td>Phone Interview</td>
+                        <td>04/23/2018</td>
+                    </tr>
+                    <tr>
+                        <td id="firstName">David</td>
+                        <td id="lastName">Chambler</td>
+                        <td>New York</td>
+                        <td>NY</td>
+                        <td>hello@world.com</td>
+                        <td>113-234-9999</td>
+                        <td>On-site Interview</td>
+                        <td>04/04/2018</td>
+                    </tr>
+                    
+                </table>
+            </div>
+            <div class="container">
+        <div class="row">
+          <div class="col-md-offset-2 col-md-7">
+          {+body /}
+          </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    <div id="footer" ></div>
+
+
+    
+    
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
