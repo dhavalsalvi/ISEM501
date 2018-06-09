@@ -1,0 +1,22 @@
+{
+  "name": "isem501",
+  "version": "1.0.0",
+  "description": "isem 501 project",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhavalsalvi/ISEM501.git"
+  },
+  "author": "Sally",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhavalsalvi/ISEM501/issues"
+  },
+  "homepage": "https://github.com/dhavalsalvi/ISEM501#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
